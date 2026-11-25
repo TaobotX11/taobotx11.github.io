@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Syarat &amp; Ketentuan dan Kebijakan Privasi — NuxP2P</title>
+<style>
+  body { margin: 0; font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; color: #1c2420; background: #f6f8f7; line-height: 1.6; }
+  main { max-width: 720px; margin: 0 auto; padding: 32px 20px 48px; background: #fff; }
+  h1 { font-size: 1.5rem; color: #0a5c42; margin: 0 0 4px; }
+  h2 { font-size: 1.15rem; color: #0a5c42; margin: 32px 0 8px; padding-top: 24px; border-top: 1px solid #e3ebe7; }
+  h3 { font-size: 1rem; margin: 20px 0 4px; }
+  p, li { font-size: 0.95rem; }
+  ul { padding-left: 20px; }
+  .updated { color: #6b7a72; font-size: 0.85rem; margin-bottom: 24px; }
+  .note { background: #eaf4ef; border-left: 4px solid #0a5c42; padding: 12px 16px; border-radius: 4px; font-size: 0.95rem; }
+  footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid #e3ebe7; color: #6b7a72; font-size: 0.85rem; }
+</style>
+</head>
+<body>
+<main>
+<h1>Syarat &amp; Ketentuan dan Kebijakan Privasi</h1>
+<p><strong>Pasar peer-to-peer NuxP2P di aplikasi Pundi</strong></p>
+<p class="updated">Terakhir diperbarui: 25 November 2026</p>
+
+<p class="note">Dengan menggunakan NuxP2P, pengguna menyetujui syarat dan ketentuan serta kebijakan privasi di halaman ini.</p>
+
+<h2>Bagian 1 — Syarat &amp; Ketentuan</h2>
+
+<h3>1. Layanan</h3>
+<p>NuxP2P adalah pasar peer-to-peer di aplikasi Pundi untuk jual-beli Nusacoin (NUX) antar pengguna. Dana NUX dikunci di escrow selama trade berjalan — lewat multisig 2-dari-3 (pembeli, penjual, wasit) untuk jalur on-chain, atau hold invoice melalui koordinator untuk jalur Lightning. Wasit hanya turun tangan saat sengketa atau refund; jalur normal tidak membutuhkan wasit.</p>
+<p>NuxP2P bukan bursa dan bukan pedagang aset kripto berizin (PAKD). NuxP2P tidak menetapkan harga, tidak menyimpan dana pengguna, dan tidak menyimpan kunci pengguna. Harga disepakati para pihak. NuxP2P berjalan sebagai pilot komunitas terbatas; rilis publik menunggu peninjauan hukum.</p>
+<p>Pengguna wajib cakap hukum (minimal 17 tahun atau sudah menikah) dan memakai akun atas nama sendiri. Satu orang memakai satu akun.</p>
+
+<h3>2. Pasangan dagang dan batas</h3>
+<ul>
+  <li>Pasangan dagang: NUX/IDR, NUX/DOGE, NUX/USDT.</li>
+  <li>Batas per trade: minimum Rp50.000, maksimum Rp1.000.000.</li>
+  <li>Batas harian: maksimum Rp5.000.000 per pengguna per hari kalender.</li>
+  <li>Rupiah adalah satu-satunya alat pembayaran yang sah. NUX adalah aset digital yang diperdagangkan — bukan alat pembayaran.</li>
+</ul>
+
+<h3>3. Alur trade</h3>
+<ul>
+  <li>Offer yang ter-listing adalah penawaran mengikat. Trade terbentuk saat offer diambil; harga dan jumlah saat itu mengikat kedua pihak.</li>
+  <li>Jalur on-chain: penjual mengunci NUX ke alamat escrow multisig. Trade berstatus funded sesudah funding terkonfirmasi di chain.</li>
+  <li>Jalur Lightning: pembeli mengirim invoice LN sebesar jumlah trade tepat; penjual membayar hold invoice escrow; dana terkunci sampai koordinator melepasnya.</li>
+  <li>Jendela trade 24 jam, dihitung sejak dana escrow terkonfirmasi (on-chain) atau terkunci (Lightning). Pembeli wajib menyelesaikan pembayaran di dalam jendela ini, lalu menandai "sudah bayar" dengan bukti bayar.</li>
+  <li>Penjual memeriksa uang masuk lalu menekan konfirmasi terima; NUX dilepas ke pembeli. Rilis tidak membutuhkan wasit.</li>
+  <li>Bila jendela lewat tanpa pembayaran, trade kedaluwarsa: penjual berhak refund dan dana kembali ke penjual.</li>
+</ul>
+
+<h3>4. Fee layanan</h3>
+<ul>
+  <li>Fee layanan dinyatakan dalam NUX dan dibebankan ke penjual; pembeli tidak dikenai fee layanan.</li>
+  <li>Besaran fee dihitung saat trade dibuat dari target setara Rp15.000 dibagi harga pasar NUX saat itu, dengan NUX penjual dinilai pada harga pasar ditambah 10%. Besaran yang terkunci tidak berubah selama trade berjalan.</li>
+  <li>Fee dipotong otomatis saat rilis — pembeli menerima jumlah trade tepat, fee dibayar ke operator dari transaksi rilis (on-chain) atau tinggal di koordinator (Lightning).</li>
+  <li>Bila trade berakhir refund atau batal sebelum rilis, fee tidak terutang: penjual menerima kembali seluruh dana escrow dikurangi hanya fee miner on-chain.</li>
+</ul>
+
+<h3>5. Bukti bayar</h3>
+<ul>
+  <li>Bukti bayar boleh berupa keterangan teks dan/atau gambar (mis. tangkapan layar bukti transfer). Untuk pasangan kripto, bukti utama adalah txid transfer di chain asal.</li>
+  <li>Hanya kedua pihak trade dan wasit yang bisa melihat bukti bayar. Bukti bayar tidak dibagikan ke pihak lain dan tidak dipakai di luar trade atau sengketa itu.</li>
+  <li>Memalsukan, mengedit, atau memakai ulang bukti bayar orang lain adalah pelanggaran berat.</li>
+</ul>
+
+<h3>6. Sengketa, wasit, dan bond</h3>
+<ul>
+  <li>Salah satu pihak membuka sengketa dari halaman trade dengan alasan dan bukti. Dana tetap terkunci selama sengketa.</li>
+  <li>Wasit NuxP2P adalah Komunitas, melalui perwakilan yang ditunjuk. Wasit memutus berdasarkan bukti bayar, chat trade, dan status on-chain; keputusan wasit bersifat final dan mengikat, paling lambat 3×24 jam sejak sengketa dibuka.</li>
+  <li>Hasil sengketa: rilis ke pembeli, refund ke penjual, atau bagi sesuai putusan wasit.</li>
+  <li>Jalur Lightning memakai bond 3% dari nominal trade dari kedua pihak (berupa hold invoice kedua). Bond kembali utuh bila trade selesai normal; bila ada pihak menghilang atau nakal, wasit dapat memutuskan bond hangus ke pihak yang dirugikan.</li>
+</ul>
+
+<h3>7. Larangan</h3>
+<p>Pengguna dilarang menipu, memalsukan bukti bayar, atau membuat offer/trade fiktif; memakai NuxP2P untuk pencucian uang, pendanaan terorisme, atau dana hasil kejahatan; memakai NUX sebagai alat pembayaran barang/jasa; membuat akun ganda untuk mengelabui batas; memanipulasi harga, rating, atau reputasi; serta mengganggu, mengancam, atau memeras pihak lawan atau wasit.</p>
+
+<h3>8. Keamanan kunci dan tanggung jawab pengguna</h3>
+<ul>
+  <li>Kunci trade diturunkan dari frasa backup (seed) dompet utama pengguna. Frasa backup adalah satu-satunya jalan memulihkan kunci trade — simpan di tempat aman, di luar perangkat, dan jangan dibagikan kepada siapa pun.</li>
+  <li>Wasit tidak pernah meminta frasa backup atau private key, dan tidak pernah menyerahkan kunci wasit kepada siapa pun.</li>
+  <li>Kehilangan perangkat atau frasa, salah alamat, atau salah jumlah bukan tanggung jawab wasit maupun NuxP2P. Bila kunci hilang saat trade aktif, jalurnya adalah sengketa.</li>
+</ul>
+
+<h3>9. Batasan tanggung jawab</h3>
+<p>NuxP2P menyediakan tempat bertemu dan escrow non-kustodial. NuxP2P tidak menjamin harga, nilai NUX, ketersediaan lawan trade, atau kelancaran transfer bank, e-wallet, maupun chain lain; dan tidak bertanggung jawab atas kerugian akibat kelalaian pengguna, perubahan harga, gangguan jaringan atau bank, atau keadaan memaksa. Risiko harga dan risiko lawan trade ditanggung para pihak sendiri. Pengguna bertanggung jawab atas kewajiban pajak atas perdagangannya masing-masing.</p>
+
+<h3>10. Perubahan syarat</h3>
+<p>Syarat dan ketentuan ini dapat diperbarui sewaktu-waktu; perubahan diumumkan di aplikasi paling lambat 7 hari sebelum berlaku dan hanya berlaku untuk trade baru. Penggunaan layanan setelah perubahan berarti pengguna menerima syarat yang baru. Tanggal pembaruan terakhir tercantum di bagian atas halaman ini.</p>
+
+<h2>Bagian 2 — Kebijakan Privasi</h2>
+
+<h3>1. Data yang dikumpulkan</h3>
+<ul>
+  <li>Detail offer dan trade: sisi, jumlah, harga, dan metode bayar.</li>
+  <li>Chat trade dan bukti bayar (teks dan/atau gambar).</li>
+  <li>Identitas pengguna berupa pubkey dompet — tanpa nama, tanpa KYC.</li>
+  <li>Log teknis yang diperlukan untuk menjalankan dan mengamankan layanan.</li>
+</ul>
+
+<h3>2. Penggunaan data</h3>
+<p>Data digunakan untuk memproses trade, menyelesaikan sengketa, serta menjaga keamanan layanan.</p>
+
+<h3>3. Pembagian data</h3>
+<ul>
+  <li>Data trade hanya bisa diakses oleh kedua pihak trade dan wasit. Chat trade dapat dipakai wasit sebagai bukti dalam sengketa.</li>
+  <li>Data tidak dijual dan tidak dibagikan kepada pihak lain, kecuali diwajibkan oleh hukum yang berlaku.</li>
+</ul>
+
+<h3>4. Penyimpanan data</h3>
+<p>Data trade disimpan selama diperlukan untuk memproses trade dan menyelesaikan sengketa terkait. Gambar bukti bayar disimpan dengan kontrol akses; hanya pihak trade dan wasit yang bisa membacanya.</p>
+
+<h3>5. Hak pengguna</h3>
+<p>Pengguna dapat meminta penghapusan datanya dengan menghubungi wasit melalui aplikasi. Data yang diperlukan untuk penyelesaian sengketa atau kewajiban hukum dapat dipertahankan selama diperlukan.</p>
+
+<footer>
+  NuxP2P — syarat, ketentuan, dan kebijakan privasi di atas berlaku untuk penggunaan fitur NuxP2P melalui aplikasi Pundi.
+</footer>
+</main>
+</body>
+</html>
