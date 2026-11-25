@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kebijakan Privasi — Dompet Pundi</title>
+<style>
+  body { margin: 0; font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; color: #1c2420; background: #f6f8f7; line-height: 1.6; }
+  main { max-width: 720px; margin: 0 auto; padding: 32px 20px 48px; background: #fff; }
+  h1 { font-size: 1.5rem; color: #0a5c42; margin: 0 0 4px; }
+  h2 { font-size: 1.15rem; color: #0a5c42; margin: 32px 0 8px; padding-top: 24px; border-top: 1px solid #e3ebe7; }
+  h3 { font-size: 1rem; margin: 20px 0 4px; }
+  p, li { font-size: 0.95rem; }
+  ul { padding-left: 20px; }
+  .updated { color: #6b7a72; font-size: 0.85rem; margin-bottom: 24px; }
+  .note { background: #eaf4ef; border-left: 4px solid #0a5c42; padding: 12px 16px; border-radius: 4px; font-size: 0.95rem; }
+  footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid #e3ebe7; color: #6b7a72; font-size: 0.85rem; }
+</style>
+</head>
+<body>
+<main>
+<h1>Kebijakan Privasi</h1>
+<p><strong>Dompet Pundi</strong></p>
+<p class="updated">Terakhir diperbarui: 25 November 2026</p>
+
+<p class="note">Pundi adalah dompet self-custody: kendali atas dana sepenuhnya ada di tangan pengguna. Kebijakan ini menjelaskan data apa yang disentuh aplikasi dan apa yang tidak pernah disentuhnya.</p>
+
+<h2>1. Tanpa akun, tanpa email</h2>
+<p>Pundi tidak memerlukan pendaftaran akun. Aplikasi tidak meminta dan tidak mengumpulkan email, nama, nomor telepon, atau data identitas lainnya.</p>
+
+<h2>2. Self-custody — kunci milik pengguna</h2>
+<ul>
+  <li>Seed (frasa pemulihan) dan private key dibuat di perangkat pengguna dan disimpan terenkripsi di perangkat tersebut.</li>
+  <li>Operator tidak pernah menerima, melihat, atau menyimpan seed dan private key pengguna, dan tidak dapat memulihkannya.</li>
+  <li>Kehilangan seed berarti kehilangan akses ke dana. Pengguna bertanggung jawab penuh atas pencadangan seed-nya.</li>
+</ul>
+
+<h2>3. Data yang dikirim ke layanan</h2>
+<p>Agar dompet dapat berfungsi, aplikasi mengirimkan data berikut ke layanan terkait — dan hanya untuk keperluan yang disebutkan:</p>
+<ul>
+  <li><strong>Saldo dan transaksi (electrs):</strong> alamat dompet dikirim ke server electrs untuk memeriksa saldo dan UTXO. Alamat adalah data publik di blockchain; operator server dapat melihat alamat yang ditanyakan.</li>
+  <li><strong>Harga pasar (CoinPaprika, qutrade, Indodax):</strong> aplikasi meminta harga pasar tanpa menyertakan data pribadi apa pun.</li>
+  <li><strong>Notifikasi transaksi (layanan pemetaan operator):</strong> token push perangkat dan alamat dompet dikirim ke layanan pemetaan semata-mata agar aplikasi dapat memberi tahu transaksi masuk. Pemetaan ini dihapus saat alamat dihapus dari dompet atau token tidak lagi valid.</li>
+  <li><strong>Sewa ASIC / WASIC (jika digunakan):</strong> alamat payout, detail pesanan, dan bukti pembayaran diproses sesuai <a href="wasic-terms.html">Syarat &amp; Ketentuan dan Kebijakan Privasi WASIC</a>.</li>
+  <li><strong>Layanan pihak ketiga di dalam aplikasi (dApps):</strong> setiap layanan mengikuti kebijakannya masing-masing; Pundi tidak mengendalikan data yang diminta layanan tersebut.</li>
+</ul>
+
+<h2>4. Hiburan: TV dan radio online</h2>
+<ul>
+  <li>Daftar channel TV, jadwal acara (EPG), dan daftar radio berasal dari pihak ketiga. Operator tidak bertanggung jawab atas penyediaan daftar channel maupun ketersediaannya — channel dapat hilang, berubah, atau tidak dapat diputar tanpa pemberitahuan.</li>
+  <li>Stream audio dan video berasal dari pihak ketiga dan isinya berada di luar kendali operator.</li>
+  <li>Rencana ke depan: fitur TV hanya akan menjadi pemutar (player) — pengguna memasukkan sumbernya sendiri, dan operator tidak lagi menyediakan daftar channel.</li>
+</ul>
+
+<h2>5. Data yang tidak dikumpulkan</h2>
+<p>Pundi tidak menggunakan analitik, pelacak iklan, atau pelaporan crash pihak ketiga. Tidak ada data perilaku pengguna yang dikirim ke operator.</p>
+
+<h2>6. Penyimpanan dan penghapusan data</h2>
+<ul>
+  <li>Semua data dompet (seed terenkripsi, alamat, riwayat lokal) tersimpan di perangkat pengguna dan dilindungi PIN lokal.</li>
+  <li>Menghapus dompet atau menghapus aplikasi akan menghapus seluruh data lokal tersebut. Data yang sudah terhapus tidak dapat dipulihkan oleh operator.</li>
+  <li>Karena tidak ada akun dan tidak ada data identitas yang tersimpan di server, tidak ada data pengguna yang dapat diminta atau dihapus dari sisi server.</li>
+</ul>
+
+<h2>7. Perubahan kebijakan</h2>
+<p>Kebijakan ini dapat diperbarui sewaktu-waktu. Penggunaan aplikasi setelah perubahan berarti pengguna menerima kebijakan yang baru. Tanggal pembaruan terakhir tercantum di bagian atas halaman ini.</p>
+
+<footer>
+  Dompet Pundi — kebijakan privasi di atas berlaku untuk penggunaan aplikasi Pundi.
+</footer>
+</main>
+</body>
+</html>
